@@ -108,8 +108,9 @@ class ProductListFragment : Fragment() {
     }
 
     fun showFailure(message: String) {
-        Snackbar.make(requireView(),message,Snackbar.LENGTH_LONG)
+        Snackbar.make(requireView(),message,Snackbar.LENGTH_LONG).show()
         shimmerLayout.visibility = View.GONE
+        rvProductList.visibility = View.VISIBLE
 
     }
 
