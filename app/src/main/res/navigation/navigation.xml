@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/productListFragment2">
+    <fragment
+        android:id="@+id/productListFragment2"
+        android:name="com.sania.airliftcasestudy.ui.fragment.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment2_to_addCurrencyActivity"
+            app:destination="@id/addCurrencyActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/addCurrencyActivity"
+        android:name="com.sania.airliftcasestudy.ui.activities.AddCurrencyActivity"
+        android:label="AddCurrencyActivity" />
+</navigation>
