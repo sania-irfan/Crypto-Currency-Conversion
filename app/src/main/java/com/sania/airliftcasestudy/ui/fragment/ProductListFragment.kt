@@ -105,6 +105,7 @@ class ProductListFragment : Fragment() {
     fun showEmpty() {
         layoutEmptyList.visibility = View.VISIBLE
         rvProductList.visibility = View.GONE
+        shimmerLayout.visibility = View.GONE
     }
 
     fun showFailure(message: String) {
